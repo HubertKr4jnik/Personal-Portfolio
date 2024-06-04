@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HK.</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <p id="logo">HK.</p>
+        <div id="navButtons">
+            <a href="#"><div class="navItem active">Home</div></a>
+            <a href="#about"><div class="navItem">About</div></a>
+            <a href="#projects"><div class="navItem">Projects</div></a>
+            <a href="#contact"><div class="navItem">Contact</div></a>
+        </div>
+        <input type="button" value="Get CV">
+    </nav>
+    <main id="home">
+        <div id="main-left">
+            <p>Hello World!</p>
+            <h1>I'm <span>Hubert</span> Krajnik</h1>
+            <p>
+                A student front-end programmer with passion, a lot of energy and the will to allways learn something new.
+            </p>
+            <input type="button" value="Download CV">
+        </div>
+        <div id="main-right">
+            <img src="code.png" alt="Monitor with code" id="codeImg">
+            <a href="https://www.vecteezy.com/free-vector/computer" id="codeImgAttrib">Computer Vectors by Vecteezy</a>
+        </div>
+    </main>
+    <section id="about">
+        <hr>
+        <h2>A few words <span>about</span> me</h2>
+        <p id="about-text">
+            I am a programming student, focused on developing <span>web aplications</span> and user friendly UI. Currently I'm studying at Mechanical School Complex No. 1 in Bydgoszcz.<br>
+            I'm passionate about learning and getting to know something new every day.
+        </p>
+        <h2>My tech <span>stack</span></h2>
+        <div id="about-stack-container">
+            <ul>
+                <li><img src="HTML5-logo.png" alt="HTML5-logo"><span><b>HTML5</b>&nbsp;</span> - advanced</li>
+                <li><img src="CSS3-logo.svg.png" alt="CSS3-logo"><span><b>CSS 3</b>&nbsp;</span> - advanced</li>
+                <li><img src="JavaScript-logo.png" alt="JavaScript-logo"><span><b>JavaScript</b>&nbsp;</span> - intermediate</li>
+            </ul>
+            <ul>
+                <li><img src="React-logo.webp" alt="React-logo"><span><b>React JS</b>&nbsp;</span> - pre intermediate</li>
+                <li><img src="PHP-logo.svg.png" alt="PHP-logo"><span><b>PHP</b>&nbsp;</span> - intermediate</li>
+                <li><img src="node-js-logo.png" alt="node-js-logo"><span><b>Node JS</b>&nbsp;</span> - intermediate</li>
+            </ul>
+        </div>
+    </section>
+    <section id="projects">
+        <hr>
+        <h2>My <span>work</span></h2>
+        <div id="project-card-container">
+            <div class="project-card">
+                <img src="portfolio-image.png" alt="" class="project-image">
+                <h3>Personal <span>portfolio</span></h3>
+                <p class="project-desc">
+                    Personal portfolio website with clean apperance and easy to navigate UI
+                </p>
+                <input type="button" value="View site">
+            </div>
+            <div class="project-card">
+                <img src="Time2Travel-image.png" alt="" class="project-image">
+                <h3>Time<span>2</span>travel</h3>
+                <p class="project-desc">
+                    A web app made to help plan your trip and allow for easy access to the information you need
+                </p>
+                <button class="button-disabled">Work in progress</button>
+            </div>
+            <div class="project-card">
+                <img src="memory-game-image.png" alt="" class="project-image">
+                <h3><span>Memory</span> game</h3>
+                <p class="project-desc">
+                    A simple mmemory game in polish made using vanilla JavaScript
+                </p>
+                <input type="button" value="View site">
+            </div>
+        </div>
+    </section>
+    <footer id="contact">
+        <hr>
+        <div id="contact-container">
+            <div id="contact-form-container">
+                <h2><span>Contact</span> me</h2>
+                <form method="post" action="https://formspree.io/f/xqkrvyrv">
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="text" name="Second name" placeholder="Second name" required>
+                        <input type="email" name="E-mail" placeholder="E-mail" required>
+                        <input type="text" name="Subject" placeholder="Subject" required>
+                        <textarea name="Message" placeholder="Your message" required></textarea>
+                        <input type="submit" value="Send">
+                </form>
+            </div>
+            <div id="contact-image-container">
+                <img src="email.png" alt="Email sending vector" id="emailImg">
+                <a href="https://www.vecteezy.com/free-vector/send-email" id="emailImgAttrib">Send Email Vectors by Vecteezy</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
