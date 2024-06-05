@@ -321,3 +321,28 @@ main input[type=button]:hover{
     opacity: 0;
     transition: all .25s;
 }
+@media screen and (max-height: 768px){
+    body{
+        background-color: red;
+    }
+    #projects{
+        height: 105vh;
+    }
+    #projects hr{
+        margin-top: 5vh;
+    }
+    .project-card{
+        height: fit-content;
+        padding: 1em 1em 2em 1em;
+    }
+    #contact{
+        margin-top: 5vh;
+        height: 115vh;
+    }
+    #contact hr{
+        margin-top: 5vh;
+    }
+    #contact-container{
+        height: 80%;
+    }
+}
