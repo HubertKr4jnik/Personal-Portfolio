@@ -78,12 +78,12 @@ main span{
     color: hsl(337, 100%, 45%);
 }
 main input[type=button]{
-    width: 30%;
+    width: fit-content;
     cursor: pointer;
     border: none;
     color: whitesmoke;
     background-color: hsl(337, 100%, 40%);
-    padding: .5em 1em;
+    padding: .5em 2em;
     border-radius: .25em;
     margin-top: 2em;
     transition: all .25s;
@@ -199,7 +199,7 @@ main input[type=button]:hover{
     margin: 1em;
 }
 .project-card input[type=button]{
-    width: 30%;
+    width: fit-content;
     cursor: pointer;
     border: none;
     color: whitesmoke;
@@ -321,6 +321,7 @@ main input[type=button]:hover{
     opacity: 0;
     transition: all .25s;
 }
+
 @media screen and (max-height: 768px){
     #projects{
         height: 105vh;
@@ -341,5 +342,145 @@ main input[type=button]:hover{
     }
     #contact-container{
         height: 80%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    nav{
+        width: 100%;
+        justify-content: space-around;
+    }
+    #navButtons{
+        display: none;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 90vh;
+    }
+    #main-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2em;
+    }
+    #about{
+        height: fit-content;
+        margin-top: 0vh;
+        padding: 0;
+    }
+    #about span{
+        color: hsl(337, 100%, 45%);
+    }
+    #about hr{
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+    #about-stack-container{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    #projects{
+        height: fit-content;
+        margin-top: 5vh;
+        padding: 0;
+    }
+    #projects hr{
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+    #project-card-container{
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        height: 90%;
+        margin-top: 3em;
+        gap: 3em;
+    }
+    .project-card{
+        width: 80%;
+        height: 90%;
+        border: 2px solid #2d2d30;
+        border-radius: 1em;
+        padding: 1em;
+    }
+
+
+    #contact{
+        margin-top: 0;
+        height: fit-content;
+        padding: 0;
+        background: linear-gradient(#121212, #121212, hsla(337, 100%, 45%, .75));
+    }
+    #contact hr{
+        position: relative;
+        width: 100%;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+    #contact-container{
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #contact-container img{
+        display: none;
+    }
+    #contact-form-container{
+       width: 100%;
+       height: 100%;
+    }
+    #contact-form-container form{
+        position: relative;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+    #contact-form-container form input[type=text], #contact-form-container form input[type=email]{
+        color: whitesmoke;
+        width: 100%;
+        height: 90%;
+        background-color: transparent;
+        border: 1px solid hsl(0, 0%, 30%);
+        border-radius: .5em;
+        padding: 1em;
+    }
+    #contact-form-container form textarea{
+        color: whitesmoke;
+        background-color: transparent;
+        border: 1px solid hsl(0, 0%, 30%);
+        border-radius: .5em;
+        padding: 1em;
+        width: 100%;
+        height: 100%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    #contact-form-container form input[type=submit]{
+        position: relative;
+        bottom: initial;
+        left: initial;
+        width: fit-content;
+    }
+    #contact-form-container form input[type=submit]:hover{
+        background-color: hsl(337, 100%, 45%);
+    }
+    #contact-image-container{
+        position: relative;
+        display: grid;
+        place-items: center;
+    }
+    #contact-image-container a{
+        color: hsl(337, 100%, 45%);
+        position: absolute;
+        bottom: 1.5em;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: all .25s;
     }
 }
