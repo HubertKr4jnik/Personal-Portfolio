@@ -346,9 +346,6 @@ main input[type=button]:hover{
 }
 
 @media screen and (max-width: 480px){
-    body{
-        width: 100%;
-    }
     nav{
         width: 100vw;
         justify-content: space-around;
@@ -379,13 +376,27 @@ main input[type=button]:hover{
         color: hsl(337, 100%, 45%);
     }
     #about hr{
+        width: 90%;
         margin-top: 5vh;
         margin-bottom: 5vh;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #about-text{
+        margin: 2em 1em;
     }
     #about-stack-container{
         display: flex;
         flex-direction: column;
         margin: 0;
+    }
+    #about ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    #about ul li{
+        margin: 2em 4em;
     }
     #projects{
         height: fit-content;
@@ -393,8 +404,11 @@ main input[type=button]:hover{
         padding: 0;
     }
     #projects hr{
+        width: 90%;
         margin-top: 5vh;
         margin-bottom: 5vh;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #project-card-container{
         display: flex;
@@ -411,8 +425,6 @@ main input[type=button]:hover{
         border-radius: 1em;
         padding: 1em;
     }
-
-
     #contact{
         margin-top: 0;
         height: fit-content;
@@ -421,14 +433,19 @@ main input[type=button]:hover{
     }
     #contact hr{
         position: relative;
-        width: 100%;
+        width: 90%;
         margin-top: 10vh;
-        margin-bottom: 10vh;
+        margin-bottom: 5vh;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #contact-container{
         position: relative;
         display: flex;
         flex-direction: column-reverse;
+        margin-top: 0;
+        padding: 0 0 2em 0;
+        border: none;
     }
     #contact-container img{
         display: none;
