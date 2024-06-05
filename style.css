@@ -322,9 +322,6 @@ main input[type=button]:hover{
     transition: all .25s;
 }
 @media screen and (max-height: 768px){
-    body{
-        background-color: red;
-    }
     #projects{
         height: 105vh;
     }
