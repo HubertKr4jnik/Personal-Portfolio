@@ -396,7 +396,7 @@ main input[type=button]:hover{
         padding: 0;
     }
     #about ul li{
-        margin: 2em 4em;
+        margin: 2em 0;
     }
     #projects{
         height: fit-content;
