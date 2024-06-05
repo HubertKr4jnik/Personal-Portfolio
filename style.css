@@ -367,6 +367,16 @@ main input[type=button]:hover{
         justify-content: center;
         padding: 2em;
     }
+    #main-right a{
+        color: hsl(337, 100%, 45%);
+        white-space: nowrap;
+        position: absolute;
+        bottom: -1em;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: all .25s;
+    }
     #about{
         height: fit-content;
         margin-top: 0vh;
@@ -497,12 +507,6 @@ main input[type=button]:hover{
         place-items: center;
     }
     #contact-image-container a{
-        color: hsl(337, 100%, 45%);
-        position: absolute;
-        bottom: 1.5em;
-        left: 50%;
-        transform: translateX(-50%);
-        opacity: 0;
-        transition: all .25s;
+        display: none;
     }
 }
